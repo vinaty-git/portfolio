@@ -1,25 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>
+    <title>Kirill Labutkin / Portfolio</title>
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link href="/styles/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/styles/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="/styles/fontawesome/css/solid.min.css" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/f898c692d1.js" crossorigin="anonymous"></script> -->
+    <script src="/scripts/main.js"></script>
+    </head>
 
+<body>
+
+    <header>
+        <nav class="header__container">
+
+            <div class="header__logo">
+                <h1><a href="https://labutkin.com/">Labutkin.</a></h1>
+            </div>
+
+            <ul class="header__menu">
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
                 </li>
             </ul>
+
+            <div class="header__action">
+                <span id="talk" onClick="colorContacts()" class="action__button button">
+                    <span>Let's talk</span>
+                    <span id="ball" class="ball"></span>
+                </span>
+            </div>
+
         </nav>
     </header>
-    <section>
-        MY PORTFOLIO
-    </section>
-    
+
+    <main>
+
+        <section class="main__hero">
+
+            <div class="hero__container">
+
+                <div class="hero__heading">
+                    
+                    <span class='hero__static'>Hi, I am</span>
+
+                    <div class="hero__words">
+
+                        <span class='hero__word-one'>Kirill Labutkin</span>
+                        <span class='hero__word-two'>Front-end developer</span>
+
+                    </div>
+
+                </div>
+
+                <div class="hero__text-img">
+
+                    <div class="hero__text">
+                        I am Kirill Labutkin a front-end developer with passion to design and user-friendly UI/UX that benefit people and companies
+                    </div>          
+
+                    <div class="hero__image">
+                        <img src="images/me.jpg" alt="My photo in portfolio">
+                    </div>
+
+                </div>
+
+                <div id="hero__action" class="hero__action">
+                    <a id="hero-contact-1" href="https://www.linkedin.com/in/kirill-labutkin/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a id="hero-contact-2" href="https://facebook.com/profile.php?id=100073823433760"><i class="fa-brands fa-facebook"></i></a>
+                    
+                    <span id="hero-contact-3" class="t__tl">
+
+                        <a>
+                            <i class="fa-sharp fa-solid fa-square-phone"></i>
+                            +381 637 561 233
+                        </a>
+            
+                        <i onClick="copyThis(event)" class="fa-thin fa-copy"></i>
+            
+                        <span class="copy-span">Copied</span>
+            
+                    </span>
+            
+                    <span id="hero-contact-4"  class="t__email">
+            
+                        <a href="mailto:kirill.labutkin@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            kirill.labutkin@gmail.com
+                        </a>
+                        
+                        <i onClick="copyThis(event)" class="fa-thin fa-copy"></i>
+            
+                        <span class="copy-span">Copied</span>
+            
+                    </span>
+                    
+                    <!-- <a id="hero-contact-3" href=""><i class="fa-sharp fa-solid fa-square-phone"></i></a>
+                    <span id="hero-email" class="hero__email">
+                        kirill.labutkin@gmail.com
+                    </span> -->
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="main__skills">
+
+            <div  id="skills" class="skills__container">
+
+                <!-- <div class="skills__heading">
+                    <h2 id="skills">Skills</h2>
+                </div> -->
+
+                <div class="skills__content">
+
+                    <h2 class="skills__heading">
+                        Skills
+                    </h2>
+
+                    <div class="skills__icons">
+                        <ul class="skills__list skills__list--main">
+                            <li>
+                                <i class="fab fa-html5">HTML</i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-css3-alt">CSS</i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-square-js">JS</i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-react">React</i>
+                            </li>
+                            <li>
+                                <i class="custom-icon custom-icon--nextjs">Next.js</i>
+                            </li>
+                        </ul>
+                        <ul class="skills__list skills__list--additional">
+                            <li>
+                                <i class="fa-brands fa-php">Php</i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-database">SQL</i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-sass">Sass</i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-figma">Figma</i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-github">Github</i>
+                            </li>
+                            <li style="font-size: 18px;">
+                                + &nbsp;  &nbsp;  &nbsp;  &nbsp; <span style="font-weight: bold; color: red;">IELTS</span>
+                                <span>7.5 | C1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="main__projects">
+
+            <div class="projects__container">
+
+                <div class="projects__heading">
+                    <h2 id="projects">Projects</h2>
+                </div>
+
+                <div class="projects__box">
+
+                    <div class="project">
+
+                        <h3 class="project__heading">Library of scientific articles</h3>
+
+                        <div class="project__content">
+                            <div class="project__text">
+                                Online library inspired by Google Scholar made on React. Work with side API from CrossRef and DataCite Commons. Service of citation of science articles by 7 main science formats.
+                                Basic filtering of items. User can add any found article to his bookmarks. My first react project which one day I hope to launch in production. Currently very simplified for this showcase. Disabled mainpage and sign up for users and bookmarks stored in one user for all. Project use quite heavy API and JSON results with millions of articles.
+                            </div>
+                            <div class="project__footer">
+                                <div class="project__techs">
+                                    <i class="fa-brands fa-php">Php</i>
+                                    <i class="fa-brands fa-react">React</i>
+                                    <i class="fa-brands fa-square-js">JS</i>
+                                    <i class="fa-brands fa-sass">Sass</i>
+                                    <i class="fab fa-html5">HTML</i>
+                                </div>
+                                <div class="project__links">
+                                    <a href="https://vinaty-git.github.io/science/" target="_blank"><i class="fas fa-link"></i>Live</a>
+                                    <a href="https://github.com/vinaty-git/science/tree/gh-pages" target="_blank"><i class="fa-brands fa-github"></i>Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+
+                        <h3 class="project__heading">Global database WinerySpace</h3>
+
+                        <div class="project__content">
+
+                            <div class="project__text">
+                                Database of world wineries from all the main wine producing countries. Devided into subregions and appellations. Switching between categories without reload.
+                                Project in production, made on React/Next.js. Catalog of wineries, multiple filters, landing, registration of users, login, database stored in MySql, backend in php. 
+                                The backend is written in php, convenient and scalable api queries to the database are configured for future expanding.
+                            </div>
+
+                            <div class="project__footer">
+
+                                <div class="project__techs">
+                                    <i class="fa-brands fa-react">React</i>
+                                    <i class="fa-brands fa-react">Next.js</i>
+                                    <i class="fa-brands fa-square-js">JS</i>
+                                    <i class="fa-brands fa-sass">Sass</i>
+                                    <i class="fab fa-html5">HTML</i>
+                                    <i class="fa-brands fa-php">Php</i>
+                                    <i class="fa-brands fa-php">Sql</i>
+                                </div>
+
+                                <div class="project__links">
+                                    <a href="https://wineryspace.com/" target="_blank"><i class="fas fa-link"></i>Live</a>
+                                    <!-- <a href=""><i class="fa-brands fa-github"></i>Code</a> -->
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+
+                        <h3 class="project__heading">This porfolio website</h3>
+
+                        <div class="project__content">
+                            <div class="project__text">
+                                Vanilla html/css and js. Nothing special, clean and light website to demonstrate work without any frameworks.
+                            </div>
+                            <div class="project__footer">
+                                <div class="project__techs">
+                                    <i class="fab fa-html5">HTML</i>
+                                    <i class="fa-brands fa-sass">CSS</i>
+                                    <i class="fa-brands fa-square-js">JS</i>
+                                </div>
+                                <div class="project__links">
+                                    <a href=""><i class="fas fa-link"></i>Live</a>
+                                    <a href=""><i class="fa-brands fa-github"></i>Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+
+                        <h3 class="project__heading">Space Invaders</h3>
+
+                        <div class="project__content">
+                            <div class="project__text">
+                                Tiny project for this portfolio written without tutorials and without canvas. To demonstrate work with Java Script in dynamic.    
+                            </div>
+                            <div class="project__footer">
+                                <div class="project__techs">
+                                    <i class="fa-brands fa-square-js">JS</i>
+                                    <i class="fab fa-html5">HTML</i>
+                                    <i class="fa-brands fa-sass">CSS</i>
+                                </div>
+                                <div class="project__links">
+                                    <a href=""><i class="fas fa-link"></i>Live</a>
+                                    <a href=""><i class="fa-brands fa-github"></i>Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="main__exp">
+
+            <div class=exp__container">
+
+                <div class="exp__heading">
+                    <h2 id="about">About me</h2>
+                </div>
+
+                <div class="exp__content">
+                    I have been in website development for 1.5 years, I switched from trade and entrepreneurship. I am 35 years old, geographically I am in Serbia. I am looking for a remote job as a sole proprietor in the field of website development (front-end). I have experience in launching and managing personal projects in full-stack production. But to a greater extent, I can be useful in the front-end, in ui / ux. I love design and make websites user-friendly and interesting and I am constantly improving in technologies and skills.<ul>
+                        <li>
+                            <span>From 2005 to 2010</span>
+                            <span>Master degree in economics/business including one semester in Dublin Business School (Ireland) and one semester in Munich Business School (Germany). I was mainly focused on marketing strategies and launching products on the market.</span>
+                        </li>
+                        <li>
+                            <span>From 2010 to 2022</span>
+                            <span>Launched a new company on the market. Imported wines from the EU, Australia, South Africa, Chile and New Zealand. Organized supply chains. Developed retail alongside B2B with restaurants and retail stores. Marketed products, including new products.</span>
+                        </li>
+                        <li>
+                            <span>From 2022 to 2023</span>
+                            <span>Moved to Turkey. Worked as freelancer. Front-end web development. Working on personal projects including Vinaty, a marketplace for wineries and wine market database. Self-study front-end development.</span>
+                        </li>
+                        <li>
+                            <span>From 2023 to now</span>
+                            <span>Moved to Serbia. Working on a personal project WinerySpace.com. A global catalog of wineries of the world.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <a href="https://www.linkedin.com/in/kirill-labutkin/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://facebook.com/profile.php?id=100073823433760" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <span class="t__tl">
+
+            <a>
+                <i class="fa-sharp fa-solid fa-square-phone"></i>
+                +381 637 561 233
+            </a>
+
+            <i onClick="copyThis(event)" class="fa-thin fa-copy"></i>
+
+            <span class="copy-span">Copied</span>
+
+        </span>
+
+        <span class="t__email">
+
+            <a href="mailto:kirill.labutkin@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                kirill.labutkin@gmail.com
+            </a>
+            
+            <i onClick="copyThis(event)" class="fa-thin fa-copy"></i>
+
+            <span class="copy-span">Copied</span>
+
+        </span>
+
+    </footer>
+
 </body>
 </html>
 
