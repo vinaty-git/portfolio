@@ -477,7 +477,7 @@ header {
 }
 
 .custom-icon--nextjs {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-style: normal;
   color: #385159;
   font-size: 16px;
@@ -559,7 +559,7 @@ header {
   font-size: 30px;
 }
 .project .project__heading::before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f07b";
   margin-right: 5%;
@@ -735,7 +735,7 @@ footer {
 .t__email i, .t__tl i {
   font-size: 24px;
   color: #7db4c5;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-style: normal;
   z-index: 1;
 }
@@ -761,7 +761,7 @@ footer {
 .fa-facebook {
   font-size: 24px;
   color: #7db4c5;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-style: normal;
   z-index: 1;
 }
@@ -775,7 +775,7 @@ footer {
   font-weight: 300;
   color: #83aab9;
   cursor: pointer;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-style: normal;
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
