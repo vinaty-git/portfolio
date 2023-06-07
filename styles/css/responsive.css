@@ -1,0 +1,196 @@
+@media screen and (max-width: 1240px) {
+    header {
+        width: 100%;
+    }
+
+    .header__action {
+        justify-content: flex-end;
+    }
+
+    body {
+        width: 100vw;
+        max-width: 100vw;
+        min-width: 100vw;
+        overflow-x: hidden;
+        padding: 0 3%;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .hero__heading {
+        font-size: 5vw;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .skills__content {
+        padding: 0 5% 0 2%;
+        gap: 2%;
+        box-sizing: border-box;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hero__heading {
+        font-size: 6vw;
+    }
+    .hero__text {
+        width: 72%;
+    }
+
+    .hero__image {
+        width: 28%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__text-img .hero__image img {
+        width: 75%;
+    }
+
+    .hero__action {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .t__email {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .skills__list--additional {
+        flex-wrap: wrap;
+    }
+    .ielts {
+        margin-top: 40px;
+    }
+    .main__exp {
+        margin-bottom: 30px;
+    }
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    .header__logo h1 {
+        display: flex;
+    }
+
+    .main__hero {
+        margin-top: 10px;
+    }
+
+    .hero__heading {
+        font-size: 9vw;
+        flex-direction: column;
+        min-height: auto;
+        max-height: 100%;
+        gap: 30px;
+    }
+
+    .hero__words{
+        overflow: hidden;
+        height: 60px;
+    }
+
+    .header__container {
+        justify-content: space-between;
+    }
+
+    .header__menu {
+        display: none;
+        visibility: hidden;
+    }
+
+    .header__action  {
+        width: 50%;
+    }
+
+    .main__skills{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .skills__content {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .skills__heading {
+        transform: rotate(360deg);
+    }
+
+    .hero__text {
+        width: 100%;
+    }
+
+    .hero__text-img .hero__image::before {
+        display: none;
+    }
+
+    .hero__image {
+        display: none;
+        visibility: hidden;
+    }
+
+    #hero-contact-3{
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skills__list--main li i {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .skills__list--main li i:before {
+        font-size: 8vw;
+    }
+
+    .skills__list--main .fa-square-js:before {
+        background-color: transparent;
+    }
+
+    .skills__icons {
+        width: 100%;
+    }
+
+    .skills__list {
+        gap: 6%;
+        row-gap: 24px;
+    }
+    .ielts  {
+        margin-top: 0;
+    }
+
+    .main__projects {
+        margin-bottom: 30px;
+    }
+
+    .main__exp {
+        padding: 0 4%;
+    }
+}

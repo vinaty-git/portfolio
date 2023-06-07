@@ -477,7 +477,7 @@ header {
 }
 
 .custom-icon--nextjs {
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   color: #385159;
   font-size: 16px;
@@ -550,19 +550,16 @@ header {
   background-color: #178fb3;
   color: #285664;
   border-radius: 12px;
-  /* From https://css.glass */
   background: rgba(23, 143, 179, 0.1);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 .project .project__heading {
   margin: 0 0 20px;
   font-size: 30px;
 }
 .project .project__heading::before {
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f07b";
   margin-right: 5%;
@@ -738,7 +735,7 @@ footer {
 .t__email i, .t__tl i {
   font-size: 24px;
   color: #7db4c5;
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   z-index: 1;
 }
@@ -764,7 +761,7 @@ footer {
 .fa-facebook {
   font-size: 24px;
   color: #7db4c5;
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   z-index: 1;
 }
@@ -778,7 +775,7 @@ footer {
   font-weight: 300;
   color: #83aab9;
   cursor: pointer;
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
